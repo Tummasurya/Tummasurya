@@ -1,4 +1,4 @@
-# 👨‍💻 Tumma Surya – Projects Portfolio
+# Tumma Surya – Projects Portfolio
 
 Welcome to my GitHub Portfolio! I'm Tumma Surya, a passionate developer focused on building real-time embedded systems, IoT applications, and full-stack solutions. Here are two key projects that reflect my learning, creativity, and technical growth.
 
