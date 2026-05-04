@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tumma Surya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #000000;
+    --card: rgba(255,255,255,0.04);
+    --primary-text: #ffffff;
+    --secondary-text: #a1a1aa;
+    --accent: #22c55e;
+    --blue: #38bdf8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--primary-text);
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.6);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--secondary-text);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-text);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero span {
+    color: var(--accent);
+}
+
+.hero p {
+    margin-top: 15px;
+    color: var(--secondary-text);
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    background: var(--primary-text);
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.card h3 {
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: var(--secondary-text);
+}
+
+.card ul {
+    margin-left: 18px;
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+.tech {
+    font-size: 12px;
+    color: #71717a;
+    margin-top: 10px;
+}
+
+/* CONTACT */
+.contact a {
+    display: block;
+    margin: 10px 0;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--blue);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #52525b;
+}
+
+/* MOBILE */
+@media(max-width: 600px){
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>Surya</strong></div>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Hi, I'm <span>Tumma Surya</span></h1>
+        <p>Embedded Systems • IoT • Full Stack Developer</p>
+        <a href="#projects" class="btn">View Work</a>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>🚀 Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>GoBox – Web Wonder 🌐📦</h3>
+            <p>School box delivery system with real-time tracking.</p>
+
+            <ul>
+                <li>Supabase live tracking</li>
+                <li>Pickup & delivery UI</li>
+                <li>Future GPS tracking</li>
+            </ul>
+
+            <p class="tech">React • Supabase • JavaScript</p>
+            <p><strong>Status:</strong> In Progress</p>
+
+            <a href="https://github.com/Tummasurya/gobox-web-wonder" target="_blank">View →</a>
+        </div>
+
+        <div class="card">
+            <h3>Smart Street Light 💡</h3>
+            <p>IoT automation system using sensors.</p>
+
+            <ul>
+                <li>LDR + IR control</li>
+                <li>Energy optimization</li>
+                <li>Arduino real-time system</li>
+            </ul>
+
+            <p class="tech">Arduino • C • Embedded</p>
+            <p><strong>Status:</strong> Completed</p>
+
+            <a href="https://github.com/Tummasurya/Iot-based-smart-street-project-" target="_blank">View →</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>📫 Contact</h2>
+
+    <a href="https://in.linkedin.com/in/tumma-surya-prakash-a8182331b" target="_blank">LinkedIn</a>
+    <a href="mailto:tummasuryaprakash2003@gmail.com">Email</a>
+
+    <p>📞 +91 7675080988</p>
+</section>
+
+<footer>
+    © 2026 Tumma Surya
+</footer>
+
+</body>
+</html>
